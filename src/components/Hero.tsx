@@ -30,10 +30,13 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="hero__media" aria-hidden="true">
-          {/* TODO: trocar pelo retrato da Pamella em /public/pamella.jpg e usar <img> */}
+        <div className="hero__media">
           <div className="hero__photo">
-            <span className="hero__photo-hint">Foto da Pamella</span>
+            <img
+              className="hero__photo-img"
+              src="/pamella-hero.jpg"
+              alt="Pamella Martins, nutricionista em São Bernardo do Campo"
+            />
           </div>
           <div className="hero__blob hero__blob--1" />
           <div className="hero__blob hero__blob--2" />

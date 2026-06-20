@@ -4,10 +4,13 @@ export default function About() {
   return (
     <section id="sobre" className="section about">
       <div className="container about__inner">
-        <div className="about__media" aria-hidden="true">
-          {/* TODO: trocar pela foto da Pamella em /public/sobre.jpg */}
+        <div className="about__media">
           <div className="about__photo">
-            <span className="about__photo-hint">Foto</span>
+            <img
+              className="about__photo-img"
+              src="/pamella-sobre.webp"
+              alt="Pamella Martins atendendo no consultório em São Bernardo do Campo"
+            />
           </div>
         </div>
 
