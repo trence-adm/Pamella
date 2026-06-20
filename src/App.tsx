@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar';
+import ReelsPreview from './components/ReelsPreview';
 import Hero from './components/Hero';
 import About from './components/About';
 import Specialties from './components/Specialties';
@@ -15,6 +16,7 @@ export default function App() {
     <>
       <Navbar />
       <main>
+        <ReelsPreview />
         <Hero />
         <About />
         <Specialties />
