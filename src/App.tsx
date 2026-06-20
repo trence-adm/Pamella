@@ -16,7 +16,6 @@ export default function App() {
     <>
       <Navbar />
       <main>
-        <ReelsPreview />
         <Hero />
         <About />
         <Specialties />
@@ -27,6 +26,7 @@ export default function App() {
         <CTA />
       </main>
       <Footer />
+      <ReelsPreview />
       <WhatsAppFloat />
     </>
   );
