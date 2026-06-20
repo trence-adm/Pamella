@@ -1,18 +1,32 @@
 import { useEffect, useState } from 'react';
 
 type Reel = { day: number; file: string };
+type Carousel = { id: string; titulo: string; slides: string[] };
 
-// Seção TEMPORÁRIA de pré-visualização dos reels (site em construção).
+// Seção TEMPORÁRIA de pré-visualização (site em construção).
 export default function ReelsPreview() {
   const [reels, setReels] = useState<Reel[]>([]);
+  const [cars, setCars] = useState<Carousel[]>([]);
+
   useEffect(() => {
     fetch('/reels.json?ts=' + Date.now())
       .then((r) => (r.ok ? r.json() : []))
       .then((d) => setReels(Array.isArray(d) ? d : []))
-      .catch(() => setReels([]));
+      .catch(() => {});
+    fetch('/carousels.json?ts=' + Date.now())
+      .then((r) => (r.ok ? r.json() : []))
+      .then((d) => setCars(Array.isArray(d) ? d : []))
+      .catch(() => {});
   }, []);
 
-  if (!reels.length) return null;
+  if (!reels.length && !cars.length) return null;
+
+  const label: React.CSSProperties = {
+    color: '#d9bd8b',
+    fontSize: '.8rem',
+    marginBottom: 6,
+    letterSpacing: '.06em',
+  };
 
   return (
     <section style={{ background: '#2f3a2a', padding: '28px 16px' }}>
@@ -22,19 +36,15 @@ export default function ReelsPreview() {
             color: '#fff',
             fontFamily: 'Fraunces, Georgia, serif',
             textAlign: 'center',
-            margin: '0 0 4px',
+            margin: '0 0 18px',
           }}
         >
-          Reels (em teste)
+          Conteúdo (em teste)
         </h2>
-        <p style={{ color: '#c5d2bb', fontSize: '.85rem', textAlign: 'center', margin: '0 0 18px' }}>
-          Pré-visualização temporária — {reels.length} pronto(s)
-        </p>
+
         {reels.map((r) => (
-          <div key={r.day} style={{ marginBottom: 18 }}>
-            <div style={{ color: '#d9bd8b', fontSize: '.8rem', marginBottom: 6, letterSpacing: '.06em' }}>
-              DIA {r.day}
-            </div>
+          <div key={'r' + r.day} style={{ marginBottom: 20 }}>
+            <div style={label}>REEL · DIA {r.day}</div>
             <video
               src={'/' + r.file}
               controls
@@ -42,6 +52,32 @@ export default function ReelsPreview() {
               preload="metadata"
               style={{ width: '100%', borderRadius: 12, display: 'block', background: '#000' }}
             />
+          </div>
+        ))}
+
+        {cars.map((c) => (
+          <div key={c.id} style={{ marginBottom: 24 }}>
+            <div style={label}>CARROSSEL</div>
+            <div style={{ color: '#fff', margin: '0 0 8px', fontSize: '.95rem' }}>{c.titulo}</div>
+            <div
+              style={{
+                display: 'flex',
+                gap: 8,
+                overflowX: 'auto',
+                paddingBottom: 8,
+                scrollSnapType: 'x mandatory',
+              }}
+            >
+              {c.slides.map((s, i) => (
+                <img
+                  key={i}
+                  src={'/' + s}
+                  alt=""
+                  loading="lazy"
+                  style={{ height: 320, borderRadius: 10, flex: '0 0 auto', scrollSnapAlign: 'start' }}
+                />
+              ))}
+            </div>
           </div>
         ))}
       </div>
