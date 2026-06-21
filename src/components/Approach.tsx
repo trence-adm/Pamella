@@ -5,9 +5,9 @@ export default function Approach() {
     <section id="como-funciona" className="section approach">
       <div className="container">
         <div className="section__head">
-          <span className="eyebrow">Como funciona</span>
-          <h2 className="section__title">Simples do começo ao fim</h2>
-          <p className="section__lead">Quatro passos para começar a cuidar de você com leveza.</p>
+          <span className="eyebrow">Como funciona a consulta</span>
+          <h2 className="section__title">O passo a passo do seu acompanhamento</h2>
+          <p className="section__lead">Do primeiro &ldquo;oi&rdquo; no WhatsApp até a sua transformação, com leveza e cuidado em cada etapa.</p>
         </div>
 
         <ol className="steps">

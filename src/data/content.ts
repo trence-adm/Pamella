@@ -103,19 +103,27 @@ export const comoFunciona = [
   },
   {
     numero: '02',
-    titulo: 'Avaliação completa',
+    titulo: 'Primeira consulta',
     texto:
-      'Conversamos sobre sua história, rotina, exames e objetivos. É aqui que eu entendo você de verdade.',
+      'Um encontro tranquilo, de cerca de uma hora, todo dedicado a você. O momento de escutar sua história e entender o que você precisa.',
   },
   {
     numero: '03',
-    titulo: 'Plano sob medida',
-    texto: 'Monto um plano alimentar individualizado, prático e do seu jeito — pensado para a sua realidade.',
+    titulo: 'Avaliação completa',
+    texto:
+      'Anamnese detalhada: histórico de saúde, exames, hábitos, rotina e avaliação da composição corporal. Tudo para ter um ponto de partida claro.',
   },
   {
     numero: '04',
+    titulo: 'Plano alimentar individual',
+    texto:
+      'Monto um plano sob medida, prático e do seu jeito, com orientações e, quando necessário, recomendação de suplementação.',
+  },
+  {
+    numero: '05',
     titulo: 'Acompanhamento',
-    texto: 'Acompanho sua evolução, ajusto o que for preciso e celebro cada conquista com você.',
+    texto:
+      'Acompanho sua evolução de perto, ajusto o que for preciso, defino metas e celebro cada conquista com você.',
   },
 ];
 
