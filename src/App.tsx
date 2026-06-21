@@ -29,26 +29,7 @@ export default function App() {
         <CTA />
       </main>
       <Footer />
-      <section style={{ background: '#f7f4ec', textAlign: 'center', padding: '26px 16px 44px' }}>
-        <a
-          href="/posts"
-          style={{
-            display: 'inline-block',
-            background: '#5a6f52',
-            color: '#fff',
-            padding: '13px 32px',
-            borderRadius: 999,
-            textDecoration: 'none',
-            fontWeight: 600,
-            letterSpacing: '.04em',
-          }}
-        >
-          POSTS →
-        </a>
-        <div style={{ color: '#5e6359', fontSize: '.8rem', marginTop: 10 }}>
-          conteúdo em teste (protótipo)
-        </div>
-      </section>
+      {/* /posts continua acessível só pela URL direta (sem botão no site) */}
       <WhatsAppFloat />
     </>
   );
