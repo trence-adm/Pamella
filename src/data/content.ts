@@ -139,22 +139,29 @@ export const paraQuem = {
   ],
 };
 
+// Resumo das avaliações reais do Google Negócios da Pamella.
+export const googleAvaliacoes = {
+  nota: '5,0',
+  total: 44,
+  url: 'https://maps.app.goo.gl/JLMkXrET61pq7vL8A',
+};
+
 export const depoimentos = [
-  // TODO: substituir por depoimentos reais de pacientes (com autorização).
+  // Avaliações reais do Google Negócios (Nutri Pamella Martins).
   {
-    nome: 'Paciente satisfeita',
+    nome: 'Joiciane Valéria',
     texto:
-      'Pela primeira vez consegui seguir um plano sem me sentir presa. Emagreci com saúde e aprendi a comer melhor de verdade.',
+      'Profissional excelente, de um carinho e empatia que te motiva! Ela te dá todo o suporte necessário para alcançar os seus objetivos, com leveza e total disciplina.',
   },
   {
-    nome: 'Paciente satisfeita',
+    nome: 'Adriana Gomes',
     texto:
-      'A Pamella olhou para os meus exames e para a minha rotina. O plano foi todo pensado pra mim. Recomendo demais!',
+      'Excelente profissional, muda o conceito de dieta: faz uma reeducação alimentar com consciência, não como punição. Atendimento personalizado e preocupada com o bem-estar durante todo o processo. Super recomendo a Pam!',
   },
   {
-    nome: 'Paciente satisfeita',
+    nome: 'Jones Gomes',
     texto:
-      'Minha relação com a comida mudou completamente. Mais energia, mais disposição e sem aquela culpa de sempre.',
+      'Profissional super atenciosa e muito focada, sempre buscando seu desenvolvimento para aplicar com os pacientes. Super recomendo!',
   },
 ];
 
