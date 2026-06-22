@@ -105,13 +105,13 @@ export const comoFunciona = [
     numero: '02',
     titulo: 'Primeira consulta',
     texto:
-      'Um encontro tranquilo, de cerca de uma hora, todo dedicado a você. O momento de escutar sua história e entender o que você precisa.',
+      'Um encontro tranquilo, de 1h30 a 2h, todo dedicado a você. O momento de escutar sua história e entender o que você precisa.',
   },
   {
     numero: '03',
     titulo: 'Avaliação completa',
     texto:
-      'Anamnese detalhada: histórico de saúde, exames, hábitos e rotina, com exame de bioimpedância para avaliar massa magra e gordura corporal. Um ponto de partida claro.',
+      'Anamnese detalhada: histórico de saúde, exames, hábitos e rotina, com bioimpedância e adipômetro para avaliar massa magra e gordura corporal. Um ponto de partida claro.',
   },
   {
     numero: '04',

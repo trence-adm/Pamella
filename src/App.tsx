@@ -4,6 +4,7 @@ import About from './components/About';
 import Specialties from './components/Specialties';
 import Approach from './components/Approach';
 import Consultorio from './components/Consultorio';
+import Manifesto from './components/Manifesto';
 import ForWhom from './components/ForWhom';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -25,6 +26,7 @@ export default function App() {
         <Specialties />
         <Approach />
         <Consultorio />
+        <Manifesto />
         <ForWhom />
         <Testimonials />
         <FAQ />
