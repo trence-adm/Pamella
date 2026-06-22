@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Specialties from './components/Specialties';
 import Approach from './components/Approach';
+import Consultorio from './components/Consultorio';
 import ForWhom from './components/ForWhom';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -23,6 +24,7 @@ export default function App() {
         <About />
         <Specialties />
         <Approach />
+        <Consultorio />
         <ForWhom />
         <Testimonials />
         <FAQ />

@@ -111,7 +111,7 @@ export const comoFunciona = [
     numero: '03',
     titulo: 'Avaliação completa',
     texto:
-      'Anamnese detalhada: histórico de saúde, exames, hábitos, rotina e avaliação da composição corporal. Tudo para ter um ponto de partida claro.',
+      'Anamnese detalhada: histórico de saúde, exames, hábitos e rotina, com exame de bioimpedância para avaliar massa magra e gordura corporal. Um ponto de partida claro.',
   },
   {
     numero: '04',

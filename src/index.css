@@ -508,6 +508,31 @@ img {
   margin: 0;
 }
 
+/* ---------- Consultório ---------- */
+.consultorio__carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 4px 4px 14px;
+  scrollbar-width: thin;
+}
+
+.consultorio__carousel img {
+  flex: 0 0 auto;
+  height: 340px;
+  width: auto;
+  border-radius: var(--radius);
+  scroll-snap-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 720px) {
+  .consultorio__carousel img {
+    height: 260px;
+  }
+}
+
 /* ---------- For Whom ---------- */
 .forwhom {
   background:
