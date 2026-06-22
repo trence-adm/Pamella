@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-type Reel = { day: number; file: string };
+type Reel = { day: number; file: string; label?: string };
 type Carousel = { id: string; titulo: string; redes: string; slides: string[] };
 
 // Seção TEMPORÁRIA de pré-visualização (site em construção).
@@ -43,8 +43,10 @@ export default function ReelsPreview() {
         </h2>
 
         {reels.map((r) => (
-          <div key={'r' + r.day} style={{ marginBottom: 20 }}>
-            <div style={label}>Reel · Dia {r.day} — Instagram · TikTok · YouTube Shorts</div>
+          <div key={'r' + r.file} style={{ marginBottom: 20 }}>
+            <div style={label}>
+              {r.label ?? `Reel · Dia ${r.day} — Instagram · TikTok · YouTube Shorts`}
+            </div>
             <video
               src={'/' + r.file}
               controls
