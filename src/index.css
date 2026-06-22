@@ -858,7 +858,12 @@ img {
 
 .footer__social {
   display: flex;
-  gap: 22px;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+}
+
+.footer__social a {
+  word-break: break-word;
 }
 
 .footer__social a {

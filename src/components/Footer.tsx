@@ -1,6 +1,6 @@
 import { contato } from '../data/content';
 import { whatsappLink } from '../utils';
-import { IconInstagram, IconWhatsApp } from './Icons';
+import { IconInstagram, IconMail, IconWhatsApp } from './Icons';
 
 export default function Footer() {
   const ano = new Date().getFullYear();
@@ -24,7 +24,7 @@ export default function Footer() {
           </a>
           {contato.email && (
             <a href={`mailto:${contato.email}`} aria-label="E-mail">
-              ✉ {contato.email}
+              <IconMail /> {contato.email}
             </a>
           )}
         </div>

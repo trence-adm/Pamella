@@ -31,6 +31,15 @@ export function IconInstagram({ className }: IconProps) {
   );
 }
 
+export function IconMail({ className }: IconProps) {
+  return (
+    <svg className={className} {...base} width={20} height={20}>
+      <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" />
+      <path d="M3.5 6.5l8.5 6 8.5-6" />
+    </svg>
+  );
+}
+
 export function IconLeaf({ className }: IconProps) {
   return (
     <svg className={className} {...base}>
